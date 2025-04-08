@@ -1,0 +1,32 @@
+name: eds296-stevenson
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - mamba
+  - numpy
+  - pandas
+  - geopandas
+  - cartopy
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - ipykernel
+  - jupyter
+  - jupyterlab
+  - seaborn
+  - statsmodels
+  - xarray
+  - netcdf4
+  - h5netcdf
+  - cftime
+  - intake
+  - aiohttp
+  - requests
+  - pip
+  - pip:
+    - earthengine-api
+    - geemap
+    - geocoder
+    - folium
