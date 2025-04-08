@@ -75,8 +75,6 @@ conda deactivate
 
 Example environment.yml file [here](https://github.com/katleyq/python-env-guide/blob/main/example-environment/environment.yml).
 
-Note: the environment name is in the .yml file. I named it "example-environment"
-
 ``` python
 # Activate your mamba-env used for installing environments
 conda activate mamba-env
