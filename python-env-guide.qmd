@@ -38,7 +38,7 @@ format:
 
 1.  Avoid installing additional packages into your Base environment.
 
-2.  Every python project should have it's own environment.
+2.  Every python project should have its own environment.
 
 3.  Environments should only contain the packages you need.
 
