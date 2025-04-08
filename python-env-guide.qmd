@@ -1,6 +1,6 @@
 ---
 title: "Managing Python Environments"
-subtitle: "Why it's important and why to do it"
+subtitle: "Why it's important and how to do it"
 format:
   revealjs:
     theme: default
@@ -48,11 +48,11 @@ format:
 
 -   Install [Anaconda](https://ucsb-meds.github.io/MEDS-installation-guide/#install-Anaconda)
 
--   Note: when prompted in the installation process, you should add conda to your system path so that it will recognize conda as a command. If you miss this step, you can still do it. Just ask your preferred GenAI how to add conda to your system path.
+-   ***Note***: when prompted in the installation process, you should add conda to your system path so that it will recognize conda as a command. If you miss this step, you can still do it. Just ask your preferred GenAI how to add conda to your system path.
 
 ## Let's create the mamba-env you'll use to install other environments
 
-First, we'll create a conda environment from scratch that just contains mamba. You'll use this environment to install your other conda environments.
+First, we'll create a conda environment from scratch that just contains mamba. You'll use this environment to install your other conda environments faster.
 
 ``` python
 # Create environment and install 
@@ -73,7 +73,9 @@ conda deactivate
 
 ## Create environments from an environment.yml file
 
-Example yml file here.
+Example environment.yml file [here](https://github.com/katleyq/python-env-guide/blob/main/example-environment/environment.yml).
+
+Note: the environment name is in the .yml file. I named it "example-environment"
 
 ``` python
 # Activate your mamba-env used for installing environments
@@ -82,18 +84,36 @@ conda activate mamba-env
 # Navigate to the directory with the .yml file
 cd /path/to/yml
 
-# mamba 
+# Create your environment from the .yml
+mamba create -f environment.yml
+
+# Deactivate your mamba-env now that you're done installing
+conda deactivate
+
+# Activate your new environment
+conda activate example-environment
+
+# Deactive after use
+conda deactivate
 ```
 
 ## Create environments from scratch 
 
+You can also just create a bare environment, and install packages 1 by 1.
+
 ``` python
-# Import
-conda create 
+# Create your environment with python3.8 and mamba
+conda create --name example_environment python=3.8 mamba
+
+# Activate your new environment
+conda activate example_environment
 
 # Install whatever packages you need (ex: numpy and xarray)
 mamba install numpy xarray
 
 # You can also install specific versions if needed
 mamba install pandas=1.3.3
+
+# Deactivate when not in use
+conda deactivate
 ```
