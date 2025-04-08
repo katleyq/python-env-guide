@@ -92,9 +92,6 @@ conda deactivate
 
 # Activate your new environment
 conda activate example-environment
-
-# Deactive after use
-conda deactivate
 ```
 
 ## Create environments from scratch 
