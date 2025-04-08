@@ -23,7 +23,7 @@ format:
 ## Important Terms
 
 | Tool      | Description                                                                                                                        |
-|-------------------------------|----------------------------------------|
+|---------------|--------------------------------------------------------------|
 | **Pip**   | \- Python package manager<br>- Simpler dependency solver<br>- Uses `requirements.txt` for dependencies                             |
 | **Conda** | \- Package **and** environment manager<br>- *Complex* dependency solver (= fewer conflicts)<br>- Uses YAML-based environment files |
 | **Mamba** | \- She's Conda, but better and faster                                                                                              |
