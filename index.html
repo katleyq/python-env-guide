@@ -264,7 +264,7 @@
 <section id="lets-create-the-mamba-env-youll-use-to-install-other-environments" class="slide level2">
 <h2>Let’s create the mamba-env you’ll use to install other environments</h2>
 <p>First, we’ll create a conda environment from scratch that just contains mamba. You’ll use this environment to install your other conda environments faster.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="co"># Create environment and install </span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="co"># Create environment</span></span>
 <span id="cb1-2"><a href=""></a>conda create <span class="op">-</span>n mamba<span class="op">-</span>env</span>
 <span id="cb1-3"><a href=""></a></span>
 <span id="cb1-4"><a href=""></a><span class="co"># List all conda environments and locations to confirm it was created</span></span>
@@ -315,6 +315,15 @@
 <span id="cb3-12"><a href=""></a></span>
 <span id="cb3-13"><a href=""></a><span class="co"># Deactivate when not in use</span></span>
 <span id="cb3-14"><a href=""></a>conda deactivate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li><p>Use python environments! This will save you a lot of time.</p></li>
+<li><p>Don’t install additional packages in your base environment.</p></li>
+<li><p>Create an environment for each Python project.</p></li>
+<li><p>Use mamba for faster installation.</p></li>
+</ul>
 
 </section>
     </div>
