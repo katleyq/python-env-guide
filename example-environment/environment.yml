@@ -9,4 +9,4 @@ dependencies:
   - pandas>=2.0
   - pip
   - pip:
-    - special-package==1.0
+    - tensorflow
