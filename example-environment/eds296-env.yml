@@ -22,8 +22,10 @@ dependencies:
   - h5netcdf
   - cftime
   - intake
+  - intake-esm
   - aiohttp
   - requests
+  - s3fs
   - pip
   - pip:
     - earthengine-api
